@@ -38,8 +38,6 @@ namespace Cache {
 
 			cacheLru.push_front(key);
 			cache[key] = { data, cacheLru.begin() };
-			//cache[key].first = data;
-			//UpdateLru(key);
 		}
 
 		Data Get(size_t key) {
