@@ -13,7 +13,6 @@ namespace Cache {
 		std::mutex readWriteMutex;
 
 		const size_t capacity = Capacity;
-		const size_t DATA_SIZE = sizeof(Data);
 
 		List cacheLru;
 		std::unordered_map<size_t, std::pair<Data, typename List::iterator>> cache;
